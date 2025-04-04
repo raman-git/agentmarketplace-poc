@@ -8,7 +8,6 @@ import {
   Container,
   Box,
 } from '@mui/material';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
 
 const Header = () => {
   return (
@@ -16,7 +15,11 @@ const Header = () => {
       <Container maxWidth="lg">
         <Toolbar>
           <Box display="flex" alignItems="center" sx={{ flexGrow: 1 }}>
-            <SmartToyIcon sx={{ mr: 1 }} />
+            <img 
+              src="/logo1.png" 
+              alt="Agent Marketplace Logo" 
+              style={{ height: '5em', marginRight: '4px' }}
+            />
             <Typography
               variant="h6"
               component={RouterLink}

@@ -75,7 +75,7 @@ const HomePage = () => {
           GenAI Agents Marketplace
         </Typography>
         <Typography variant="subtitle1" align="center" color="text.secondary" sx={{ mb: 4 }}>
-          Discover and manage powerful AI agents for your specific needs
+          Discover and manage AI agents for your specific needs
         </Typography>
       </Box>
 
