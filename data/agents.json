@@ -97,10 +97,11 @@
       "research",
       "Q&A"
     ],
-    "apiEndpoint": "https://arapi.ms.com",
+    "apiEndpoint": "",
     "apiKey": "",
     "isEnabled": true,
     "imageUrl": "",
-    "id": 7
+    "id": 7,
+    "jarFileLocation": "/jar/file/path"
   }
 ]

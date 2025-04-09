@@ -6,6 +6,7 @@ const mockAgents = [
     category: "Text Generation",
     capabilities: ["Blog Writing", "Marketing Copy", "Creative Fiction", "SEO Content"],
     isEnabled: true,
+    jarFileLocation: "/opt/agents/textgenius.jar",
     apiEndpoint: "https://api.example.com/textgenius",
     imageUrl: "https://via.placeholder.com/150?text=TextGenius"
   },
@@ -16,6 +17,7 @@ const mockAgents = [
     category: "Code Assistant",
     capabilities: ["Code Generation", "Debugging", "Refactoring", "Documentation"],
     isEnabled: true,
+    jarFileLocation: "/opt/agents/codecraft.jar",
     apiEndpoint: "https://api.example.com/codecraft",
     imageUrl: "https://via.placeholder.com/150?text=CodeCraft"
   },
@@ -26,6 +28,7 @@ const mockAgents = [
     category: "Image Generation",
     capabilities: ["Photo Realistic Images", "Art Styles", "Product Visualization", "Character Design"],
     isEnabled: false,
+    jarFileLocation: "",
     apiEndpoint: "https://api.example.com/imagemaster",
     imageUrl: "https://via.placeholder.com/150?text=ImageMaster"
   },
@@ -36,6 +39,7 @@ const mockAgents = [
     category: "Data Analysis",
     capabilities: ["Statistical Analysis", "Data Visualization", "Trend Prediction", "Report Generation"],
     isEnabled: true,
+    jarFileLocation: "/opt/agents/datasage.jar",
     apiEndpoint: "https://api.example.com/datasage",
     imageUrl: "https://via.placeholder.com/150?text=DataSage"
   },
@@ -46,6 +50,7 @@ const mockAgents = [
     category: "Conversational",
     capabilities: ["Customer Support", "Virtual Assistant", "Companionship", "FAQ Handling"],
     isEnabled: true,
+    jarFileLocation: "/opt/agents/chatmaster.jar",
     apiEndpoint: "https://api.example.com/chatmaster",
     imageUrl: "https://via.placeholder.com/150?text=ChatMaster"
   },
@@ -56,6 +61,7 @@ const mockAgents = [
     category: "Translation",
     capabilities: ["100+ Languages", "Document Translation", "Website Localization", "Real-time Translation"],
     isEnabled: false,
+    jarFileLocation: "",
     apiEndpoint: "https://api.example.com/lingtranslate",
     imageUrl: "https://via.placeholder.com/150?text=LingTranslate"
   }

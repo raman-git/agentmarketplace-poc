@@ -44,6 +44,7 @@ const RegisterAgentPage = () => {
     description: '',
     category: '',
     capabilities: [],
+    jarFileLocation: '',
     apiEndpoint: '',
     apiKey: '',
     isEnabled: true,
@@ -134,9 +135,8 @@ const RegisterAgentPage = () => {
       newErrors.capabilities = 'At least one capability is required';
     }
     
-    if (!formData.apiEndpoint.trim()) {
-      newErrors.apiEndpoint = 'API Endpoint is required';
-    } else if (!formData.apiEndpoint.startsWith('http')) {
+    // Only validate API Endpoint format if it's provided
+    if (formData.apiEndpoint.trim() && !formData.apiEndpoint.startsWith('http')) {
       newErrors.apiEndpoint = 'API Endpoint must be a valid URL';
     }
     
@@ -315,14 +315,25 @@ const RegisterAgentPage = () => {
             <Grid item xs={12}>
               <TextField
                 fullWidth
+                label="Jar File Location"
+                name="jarFileLocation"
+                value={formData.jarFileLocation}
+                onChange={handleChange}
+                placeholder="Path to your JAR file"
+                disabled={submitting}
+              />
+            </Grid>
+            
+            <Grid item xs={12}>
+              <TextField
+                fullWidth
                 label="API Endpoint"
                 name="apiEndpoint"
                 value={formData.apiEndpoint}
                 onChange={handleChange}
                 error={!!errors.apiEndpoint}
                 helperText={errors.apiEndpoint}
-                required
-                placeholder="https://api.example.com/agent"
+                placeholder="https://api.example.com/agent (optional)"
                 disabled={submitting}
               />
             </Grid>
